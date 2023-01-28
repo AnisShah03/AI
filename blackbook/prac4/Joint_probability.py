@@ -1,3 +1,35 @@
+'''main code'''
+
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+n =1000
+x = np.random.randn(n)
+y= np.random.randn(n)**2
+
+plt.hist2d(x,y,30,vmax=10)
+plt.show()
+
+sns.jointplot(x,y,kind='scatter',color=[.8,.8,.3]).plot_joint(sns.kdeplot)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
